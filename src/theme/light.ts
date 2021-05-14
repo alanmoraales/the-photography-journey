@@ -1,5 +1,5 @@
 import { extendTheme } from '@chakra-ui/react'
-import { colors } from './constants'
+import { colors, fonts } from './constants'
 
 const {
   vividViolet,
@@ -10,6 +10,8 @@ const {
   jet,
   eerieBlack,
 } = colors
+
+const { nunitoSans, robotoSlab } = fonts
 
 const lightTheme = extendTheme({
   colors: {
@@ -30,6 +32,10 @@ const lightTheme = extendTheme({
         dark: eerieBlack,
       },
     },
+  },
+  fonts: {
+    body: nunitoSans,
+    heading: robotoSlab,
   },
 })
 
