@@ -1,9 +1,12 @@
 import Head from 'components/atoms/Head'
+import { Heading } from '@chakra-ui/react'
 
 const Home = () => (
   <div>
     <Head />
-    <main>The Photography Journey</main>
+    <main>
+      <Heading>The Photography Journey</Heading>
+    </main>
   </div>
 )
 
