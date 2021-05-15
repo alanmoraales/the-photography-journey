@@ -29,7 +29,7 @@ const lightTheme = extendTheme({
       },
       black: {
         light: jet,
-        dark: eerieBlack,
+        normal: eerieBlack,
       },
     },
   },
