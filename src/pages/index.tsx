@@ -1,13 +1,18 @@
+import styled from '@emotion/styled'
 import Head from 'components/atoms/Head'
-import { Heading } from '@chakra-ui/react'
-import BrandLogo from 'components/atoms/icons/BrandLogo'
+import { Heading } from 'components/atoms/Typography'
+
+const Container = styled.div`
+  padding: 25px;
+`
 
 const Home = () => (
   <div>
     <Head />
     <main>
-      <BrandLogo boxSize={40} />
-      <Heading>The Photography Journey</Heading>
+      <Container>
+        <Heading variant="h1">Starting The Journey</Heading>
+      </Container>
     </main>
   </div>
 )
