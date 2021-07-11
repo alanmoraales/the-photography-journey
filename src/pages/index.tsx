@@ -1,13 +1,14 @@
-import Head from 'next/head'
+import Head from 'components/atoms/Head'
+import { Heading } from '@chakra-ui/react'
+import BrandLogo from 'components/atoms/icons/BrandLogo'
 
 const Home = () => (
   <div>
-    <Head>
-      <title>The Photography Journey</title>
-      <meta name="description" content="A photography blog" />
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <main>The Photography Journey</main>
+    <Head />
+    <main>
+      <BrandLogo boxSize={40} />
+      <Heading>The Photography Journey</Heading>
+    </main>
   </div>
 )
 
