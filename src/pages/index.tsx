@@ -11,7 +11,7 @@ const Home = () => (
     <Head />
     <main>
       <Container>
-        <Heading variant="h1">Starting The Journey</Heading>
+        <Heading>Starting The Journey</Heading>
       </Container>
     </main>
   </div>
