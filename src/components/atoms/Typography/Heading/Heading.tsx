@@ -8,7 +8,12 @@ interface IHeading {
 }
 
 const Heading: FC<IHeading> = ({ children, variant = 'h1' }) => (
-  <ChakraHeading fontWeight="inherit" fontSize={variant} as={variant}>
+  <ChakraHeading
+    fontWeight="inherit"
+    fontSize={variant}
+    as={variant}
+    color="neutral.black.normal"
+  >
     {children}
   </ChakraHeading>
 )
