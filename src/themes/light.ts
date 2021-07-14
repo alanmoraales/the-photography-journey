@@ -14,6 +14,13 @@ const {
 
 const light = extendTheme({
   ...baseTheme,
+  styles: {
+    global: {
+      'html, body': {
+        bg: 'neutral.white.normal',
+      },
+    },
+  },
   colors: {
     primary: {
       light: vividViolet,
