@@ -1,4 +1,3 @@
-import styled from '@emotion/styled'
 import Link from 'components/atoms/Link'
 import Flex from 'components/atoms/Flex'
 import { BackArrow } from 'components/atoms/Icons'
