@@ -6,18 +6,20 @@ import { GetEnumKeys } from 'utils/common'
 interface IHeading {
   variant?: GetEnumKeys<typeof EHeadingVariants>
   textDecoration?: 'none' | 'underline'
+  color?: string
 }
 
 const Heading: FC<IHeading> = ({
   children,
   variant = 'h1',
   textDecoration = 'none',
+  color = 'neutral.black.normal',
 }) => (
   <ChakraHeading
     fontWeight="inherit"
     fontSize={variant}
     as={variant}
-    color="neutral.black.normal"
+    color={color}
     textDecoration={textDecoration}
   >
     {children}
