@@ -7,6 +7,7 @@ const {
   blueViolet,
   russianViolet,
   cultured,
+  culturedRGB,
   spanishGray,
   jet,
   eerieBlack,
@@ -16,6 +17,7 @@ const light = extendTheme({
   ...baseTheme,
   colors: {
     background: cultured,
+    glass: `rgba(${culturedRGB}, 0.8)`,
     primary: {
       light: vividViolet,
       normal: blueViolet,
