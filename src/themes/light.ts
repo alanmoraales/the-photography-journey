@@ -1,20 +1,23 @@
 import { extendTheme } from '@chakra-ui/react'
-import { colors, fonts } from './constants'
+import { colors } from 'shared/constants/design'
+import { baseTheme } from './baseTheme'
 
 const {
   vividViolet,
   blueViolet,
   russianViolet,
   cultured,
+  culturedRGB,
   spanishGray,
   jet,
   eerieBlack,
 } = colors
 
-const { nunitoSans, robotoSlab } = fonts
-
-const lightTheme = extendTheme({
+const light = extendTheme({
+  ...baseTheme,
   colors: {
+    background: cultured,
+    glass: `rgba(${culturedRGB}, 0.8)`,
     primary: {
       light: vividViolet,
       normal: blueViolet,
@@ -33,10 +36,6 @@ const lightTheme = extendTheme({
       },
     },
   },
-  fonts: {
-    body: nunitoSans,
-    heading: robotoSlab,
-  },
 })
 
-export { lightTheme }
+export { light }
