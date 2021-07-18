@@ -5,8 +5,13 @@ interface IFlex extends FlexProps {
   gap?: string
 }
 
-const Flex: FC<IFlex> = ({ children, gap = '0', ...restOfProps }) => (
-  <ChakraFlex {...restOfProps} style={{ gap: gap }}>
+const Flex: FC<IFlex> = ({ children, gap = '0px', ...restOfProps }) => (
+  <ChakraFlex
+    {...restOfProps}
+    sx={{
+      gap: gap,
+    }}
+  >
     {children}
   </ChakraFlex>
 )
