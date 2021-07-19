@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Box } from '@chakra-ui/react'
+import { Box, SlideFade } from '@chakra-ui/react'
 import Head from 'components/atoms/Head'
 import { ArticleHeader } from 'components/molecules/Article'
 import { EArticleType } from 'shared/types/article'
@@ -16,7 +16,7 @@ const ArticleLayout: FC<IArticleLayout> = ({
   title,
   ...headerProps
 }) => (
-  <>
+  <SlideFade in>
     <Head title={title} />
     <Box pt="16">
       <ArticleHeader title={title} {...headerProps} />
@@ -47,7 +47,7 @@ const ArticleLayout: FC<IArticleLayout> = ({
         {children}
       </Box>
     </Box>
-  </>
+  </SlideFade>
 )
 
 export default ArticleLayout
