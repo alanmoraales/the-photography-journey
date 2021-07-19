@@ -15,7 +15,7 @@ interface IArticleHeader {
 
 const ArticleHeader = ({ title, type = 'Post', date }: IArticleHeader) => (
   <Box bg="glass" display="grid" placeItems="center">
-    <Grid padding={6} maxWidth="75ch" gap={8} width="100%">
+    <Grid padding={6} maxWidth="70ch" gap={8} width="100%">
       <Grid gap={2}>
         <Heading>{title}</Heading>
         <Flex gap="8px">
