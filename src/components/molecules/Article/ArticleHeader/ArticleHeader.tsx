@@ -30,7 +30,7 @@ const ArticleHeader = ({ title, type = 'Post', date }: IArticleHeader) => (
       </Grid>
       <Flex justifyContent="space-between" alignItems="center">
         <GoBackButton />
-        <Flex gap="8px" alignItems="center">
+        <Flex gap="16px" alignItems="center">
           <ShareButton />
           <LoveButton />
         </Flex>

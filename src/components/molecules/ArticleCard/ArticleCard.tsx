@@ -44,7 +44,12 @@ const ArticleCard = ({
       <Grid gap={4}>
         <ArticleCardRow>
           <Heading variant="h4">{title}</Heading>
-          <Flex gap="4px" alignItems="center">
+          <Flex
+            gap="8px"
+            alignItems="center"
+            marginTop="3px"
+            height="fit-content"
+          >
             <LoveButton />
             <Body color="opaque">{likesCount}</Body>
           </Flex>
