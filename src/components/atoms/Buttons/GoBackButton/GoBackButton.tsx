@@ -1,3 +1,4 @@
+import router from 'next/router'
 import Link from 'components/atoms/Link'
 import Flex from 'components/atoms/Flex'
 import { BackArrow } from 'components/atoms/Icons'
@@ -8,8 +9,12 @@ interface IGoBackButton {
   label?: string
 }
 
+const onGoBack = () => {
+  router.back()
+}
+
 const GoBackButton = ({ href = '#', label = 'Go back' }: IGoBackButton) => (
-  <Link href={href}>
+  <Link onClick={onGoBack}>
     <Flex
       gap="8px"
       alignItems="center"

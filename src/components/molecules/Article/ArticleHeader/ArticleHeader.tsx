@@ -1,4 +1,4 @@
-import { Box, Grid } from '@chakra-ui/react'
+import { Grid } from '@chakra-ui/react'
 import GoBackButton from 'components/atoms/Buttons/GoBackButton'
 import ShareButton from 'components/atoms/Buttons/ShareButton'
 import LoveButton from 'components/atoms/Buttons/LoveButton'
@@ -14,8 +14,8 @@ interface IArticleHeader {
 }
 
 const ArticleHeader = ({ title, type = 'Post', date }: IArticleHeader) => (
-  <Box bg="glass" display="grid" placeItems="center">
-    <Grid padding={6} maxWidth="75ch" gap={8} width="100%">
+  <Grid bg="glass" placeItems="center">
+    <Grid padding={6} maxWidth="70ch" gap={8} width="100%">
       <Grid gap={2}>
         <Heading>{title}</Heading>
         <Flex gap="8px">
@@ -36,7 +36,7 @@ const ArticleHeader = ({ title, type = 'Post', date }: IArticleHeader) => (
         </Flex>
       </Flex>
     </Grid>
-  </Box>
+  </Grid>
 )
 
 export { ArticleHeader }
