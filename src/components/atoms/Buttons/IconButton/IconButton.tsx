@@ -1,5 +1,4 @@
 import { IconButton as ChakraIconButton } from '@chakra-ui/react'
-import { ShareIcon } from 'components/atoms/Icons'
 
 interface IIcon {
   boxSize: string
@@ -23,6 +22,9 @@ const IconButton = ({ ariaLabel, icon: Icon }: IIconButton) => (
         color: 'primary.normal',
       },
     }}
+    width="auto"
+    height="auto"
+    minWidth="unset"
   />
 )
 

@@ -1,3 +1,6 @@
 export * from './BackArrow'
 export * from './ShareIcon'
 export * from './LoveIcon'
+export * from './Logo'
+export * from './HamburgerMenu'
+export * from './GoToArrow'

@@ -17,7 +17,9 @@
     "framer-motion": "^4.1.13",
     "next": "^11.0.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-sizeme": "^3.0.1",
+    "use-justified-layout": "0.0.5"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.14.1",
