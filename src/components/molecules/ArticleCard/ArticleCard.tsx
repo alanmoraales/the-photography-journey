@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import { Grid } from '@chakra-ui/react'
+import { Grid, Box } from '@chakra-ui/react'
 import LoveButton from 'components/atoms/Buttons/LoveButton'
 import GoToButton from 'components/atoms/Buttons/GoToButton'
 import Flex from 'components/atoms/Flex'
@@ -10,6 +10,9 @@ import { Heading, Body } from 'components/atoms/Typography'
 
 const Image = styled.img`
   object-fit: contain;
+  width: 100%;
+  max-height: 200px;
+  object-position: center;
 `
 
 interface IArticleCard {
@@ -41,13 +44,13 @@ const ArticleCard = ({
   return (
     <Grid gap={4} templateColumns={{ base: 'auto', sm: '35% auto' }}>
       <Image src={coverUrl} alt={title} />
-      <Grid gap={4}>
+      <Grid gap={4} height="fit-content">
         <ArticleCardRow>
           <Heading variant="h4">{title}</Heading>
           <Flex
             gap="8px"
             alignItems="center"
-            marginTop="3px"
+            marginTop="2px"
             height="fit-content"
           >
             <LoveButton />
