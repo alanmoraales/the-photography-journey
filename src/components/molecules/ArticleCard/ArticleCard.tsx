@@ -1,8 +1,6 @@
 import styled from '@emotion/styled'
 import { Grid } from '@chakra-ui/react'
-import LoveButton from 'components/atoms/Buttons/LoveButton'
 import GoToButton from 'components/atoms/Buttons/GoToButton'
-import Flex from 'components/atoms/Flex'
 import { ArticleCardRow } from 'components/atoms/ArticleCard'
 import { EArticleType, TArticleType } from 'shared/types/article'
 import { Heading, Body } from 'components/atoms/Typography'
@@ -19,11 +17,9 @@ interface IArticleCard {
   type?: TArticleType
   photosCount: number
   title: string
-  likesCount: number
-  isLiked?: boolean
   description: string
   date: string
-  articleSlug: string
+  slug: string
 }
 
 const ArticleCard = ({
@@ -31,11 +27,9 @@ const ArticleCard = ({
   type = EArticleType.Post,
   photosCount,
   title,
-  likesCount,
-  isLiked = false,
   description,
   date,
-  articleSlug,
+  slug,
 }: IArticleCard) => {
   const linkButtonLabel =
     type === EArticleType.Post ? 'Keep reading' : 'See collection'
@@ -46,22 +40,13 @@ const ArticleCard = ({
       <Grid gap={4} height="fit-content">
         <ArticleCardRow>
           <Heading variant="h4">{title}</Heading>
-          <Flex
-            gap={2}
-            alignItems="center"
-            marginTop={0.5}
-            height="fit-content"
-          >
-            <LoveButton />
-            <Body color="opaque">{likesCount}</Body>
-          </Flex>
         </ArticleCardRow>
         <Body>{description}</Body>
         <ArticleCardRow>
           <Body color="opaque" weight="light">
             {date}
           </Body>
-          <GoToButton href={articleSlug} label={linkButtonLabel} />
+          <GoToButton href={slug} label={linkButtonLabel} />
         </ArticleCardRow>
       </Grid>
     </Grid>

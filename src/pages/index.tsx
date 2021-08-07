@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import styled from '@emotion/styled'
-import { Divider, Grid, Box } from '@chakra-ui/react'
+import { Grid, Box } from '@chakra-ui/react'
 import Head from 'components/atoms/Head'
 import Navbar from 'components/organisms/Navbar'
 import { Heading } from 'components/atoms/Typography'
-import ArticleCard from 'components/molecules/ArticleCard/ArticleCard'
 import useJustifiedLayout from 'use-justified-layout'
 import ContainerWithSizes, { ISizes } from 'components/atoms/ContainerWithSizes'
 import images from 'data/galleryImages'
 import Portview from 'components/atoms/Portview'
+import LatestContentSection from 'components/organisms/LatestContentSection'
 
 const Section = styled.div`
   display: grid;
@@ -50,29 +50,7 @@ const Home = () => {
           gap={16}
         >
           <Grid gap={16}>
-            <Section>
-              <Heading variant="h6">Latest content</Heading>
-              <ArticleCard
-                title="Finding Stories In The City"
-                coverUrl="https://images.unsplash.com/photo-1606971349543-944d83348665?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo malesuada aliquet tortor. Ac non quis porta duis."
-                articleSlug="/posts/starting-the-journey"
-                date="June 25, 2021"
-                photosCount={1}
-                likesCount={12}
-              />
-              <Divider />
-              <ArticleCard
-                title="Finding Good Stories In The City"
-                coverUrl="https://images.unsplash.com/photo-1611443849433-32b88cb1b91c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=305&q=80"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo malesuada aliquet tortor. Ac non quis porta duis."
-                articleSlug="/posts/starting-the-journey"
-                date="June 25, 2021"
-                photosCount={1}
-                likesCount={12}
-              />
-              <Divider />
-            </Section>
+            <LatestContentSection />
             <Section>
               <Heading variant="h6">Gallery</Heading>
               <Box width="100%" height={containerHeight}>
