@@ -7,7 +7,7 @@ import { Heading } from 'components/atoms/Typography'
 import ArticleCard from 'components/molecules/ArticleCard/ArticleCard'
 import useJustifiedLayout from 'use-justified-layout'
 import ContainerWithSizes, { ISizes } from 'components/atoms/ContainerWithSizes'
-import images from 'shared/data/galleryImages'
+import images from 'data/galleryImages'
 import Portview from 'components/atoms/Portview'
 
 const Section = styled.div`

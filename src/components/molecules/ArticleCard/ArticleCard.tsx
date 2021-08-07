@@ -1,11 +1,10 @@
 import styled from '@emotion/styled'
-import { Grid, Box } from '@chakra-ui/react'
+import { Grid } from '@chakra-ui/react'
 import LoveButton from 'components/atoms/Buttons/LoveButton'
 import GoToButton from 'components/atoms/Buttons/GoToButton'
 import Flex from 'components/atoms/Flex'
 import { ArticleCardRow } from 'components/atoms/ArticleCard'
-import { EArticleType } from 'shared/types/article'
-import { GetEnumKeys } from 'utils/common'
+import { EArticleType, TArticleType } from 'shared/types/article'
 import { Heading, Body } from 'components/atoms/Typography'
 
 const Image = styled.img`
@@ -17,7 +16,7 @@ const Image = styled.img`
 
 interface IArticleCard {
   coverUrl: string
-  type?: GetEnumKeys<typeof EArticleType>
+  type?: TArticleType
   photosCount: number
   title: string
   likesCount: number
