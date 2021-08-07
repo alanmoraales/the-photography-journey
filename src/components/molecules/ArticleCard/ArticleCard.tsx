@@ -48,9 +48,9 @@ const ArticleCard = ({
         <ArticleCardRow>
           <Heading variant="h4">{title}</Heading>
           <Flex
-            gap="8px"
+            gap={2}
             alignItems="center"
-            marginTop="2px"
+            marginTop={0.5}
             height="fit-content"
           >
             <LoveButton />

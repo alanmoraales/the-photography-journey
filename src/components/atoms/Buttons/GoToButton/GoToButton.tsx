@@ -11,7 +11,7 @@ interface IGoToButton {
 const GoToButton = ({ href = '#', label = 'Go' }: IGoToButton) => (
   <Link href={href}>
     <Flex
-      gap="8px"
+      gap={2}
       alignItems="center"
       sx={{
         color: 'neutral.black.normal',

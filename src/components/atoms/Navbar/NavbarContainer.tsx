@@ -6,7 +6,7 @@ const NavbarContainer: FC = ({ children }) => (
   <Grid placeItems="center" p={6}>
     <Flex
       justifyContent="space-between"
-      gap="64px"
+      gap={16}
       maxWidth="1000px"
       width="100%"
     >

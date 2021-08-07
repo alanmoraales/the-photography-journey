@@ -18,7 +18,7 @@ const ArticleLayout: FC<IArticleLayout> = ({
 }) => (
   <SlideFade in>
     <Head title={title} />
-    <Box pt="16">
+    <Box pt={16}>
       <ArticleHeader title={title} {...headerProps} />
       <Box
         sx={{
@@ -28,19 +28,19 @@ const ArticleLayout: FC<IArticleLayout> = ({
           padding: 6,
           '& p': {
             fontSize: 'blogParagraph',
-            paddingBottom: '4',
+            paddingBottom: 4,
             color: 'neutral.black.normal',
           },
           '& h4': {
             fontFamily: 'heading',
             fontSize: 'h4',
-            paddingBottom: '4',
-            paddingTop: '6',
+            paddingBottom: 4,
+            paddingTop: 6,
             color: 'neutral.black.normal',
           },
           img: {
-            paddingTop: '6',
-            paddingBottom: '6',
+            paddingTop: 6,
+            paddingBottom: 6,
           },
         }}
       >
