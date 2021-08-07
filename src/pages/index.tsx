@@ -51,7 +51,7 @@ const Home = () => {
         >
           <Grid gap={16}>
             <Section>
-              <Heading variant="h6">Lastest content</Heading>
+              <Heading variant="h6">Latest content</Heading>
               <ArticleCard
                 title="Finding Stories In The City"
                 coverUrl="https://images.unsplash.com/photo-1606971349543-944d83348665?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80"
