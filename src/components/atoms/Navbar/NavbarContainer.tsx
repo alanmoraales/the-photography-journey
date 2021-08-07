@@ -7,7 +7,7 @@ const NavbarContainer: FC = ({ children }) => (
     <Flex
       justifyContent="space-between"
       gap={16}
-      maxWidth="1000px"
+      maxWidth="container.lg"
       width="100%"
     >
       {children}
