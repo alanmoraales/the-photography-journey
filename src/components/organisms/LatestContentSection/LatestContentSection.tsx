@@ -1,15 +1,18 @@
 import { Fragment } from 'react'
 import { Divider } from '@chakra-ui/react'
+import { When } from 'react-if'
 import Section from 'components/templates/Section'
 import ArticleCard from 'components/molecules/ArticleCard'
 import articles from 'data/articles'
 
 const LatestContentSection = () => (
   <Section title="Latest content">
-    {articles.map((article) => (
+    {articles.map((article, index) => (
       <Fragment key={article.slug}>
         <ArticleCard {...article} />
-        <Divider />
+        <When condition={index + 1 !== articles.length}>
+          <Divider />
+        </When>
       </Fragment>
     ))}
   </Section>
