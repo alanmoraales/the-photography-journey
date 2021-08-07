@@ -32,7 +32,6 @@ const ArticleHeader = ({ title, type = 'Post', date }: IArticleHeader) => (
         <GoBackButton />
         <Flex gap={4} alignItems="center">
           <ShareButton />
-          <LoveButton />
         </Flex>
       </Flex>
     </Grid>

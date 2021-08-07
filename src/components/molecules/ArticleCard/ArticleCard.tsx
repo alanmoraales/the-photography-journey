@@ -8,7 +8,6 @@ import { Heading, Body } from 'components/atoms/Typography'
 const Image = styled.img`
   object-fit: contain;
   width: 100%;
-  max-height: 200px;
   object-position: center;
 `
 
@@ -52,4 +51,5 @@ const ArticleCard = ({
     </Grid>
   )
 }
+
 export default ArticleCard
