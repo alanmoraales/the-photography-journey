@@ -16,7 +16,7 @@ const onGoBack = () => {
 const GoBackButton = ({ href = '#', label = 'Go back' }: IGoBackButton) => (
   <Link onClick={onGoBack}>
     <Flex
-      gap="8px"
+      gap={2}
       alignItems="center"
       sx={{
         color: 'neutral.black.normal',

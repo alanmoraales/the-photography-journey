@@ -1,9 +1,8 @@
 import ArticleLayout from 'components/templates/ArticleLayout'
+import getArticleBySlug from 'utils/common/getArticleBySlug'
+import articles from 'data/articles'
 
-export const meta = {
-  title: 'Starting The Journey',
-  date: '18, Jul 2021',
-}
+export const article = getArticleBySlug('/posts/starting-the-journey')
 
 #### Introduction
 
@@ -73,5 +72,5 @@ you're gonna get there. So slow down a moment, enjoy the view, the sounds,
 and be happy, because the day it's just starting.
 
 export default ({ children }) => (
-  <ArticleLayout {...meta}>{children}</ArticleLayout>
+  <ArticleLayout {...article}>{children}</ArticleLayout>
 )

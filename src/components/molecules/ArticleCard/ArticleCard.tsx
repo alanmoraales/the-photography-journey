@@ -1,11 +1,8 @@
 import styled from '@emotion/styled'
-import { Grid, Box } from '@chakra-ui/react'
-import LoveButton from 'components/atoms/Buttons/LoveButton'
+import { Grid } from '@chakra-ui/react'
 import GoToButton from 'components/atoms/Buttons/GoToButton'
-import Flex from 'components/atoms/Flex'
 import { ArticleCardRow } from 'components/atoms/ArticleCard'
-import { EArticleType } from 'shared/types/article'
-import { GetEnumKeys } from 'utils/common'
+import { EArticleType, TArticleType } from 'shared/types/article'
 import { Heading, Body } from 'components/atoms/Typography'
 
 const Image = styled.img`
@@ -17,14 +14,12 @@ const Image = styled.img`
 
 interface IArticleCard {
   coverUrl: string
-  type?: GetEnumKeys<typeof EArticleType>
+  type?: TArticleType
   photosCount: number
   title: string
-  likesCount: number
-  isLiked?: boolean
   description: string
   date: string
-  articleSlug: string
+  slug: string
 }
 
 const ArticleCard = ({
@@ -32,11 +27,9 @@ const ArticleCard = ({
   type = EArticleType.Post,
   photosCount,
   title,
-  likesCount,
-  isLiked = false,
   description,
   date,
-  articleSlug,
+  slug,
 }: IArticleCard) => {
   const linkButtonLabel =
     type === EArticleType.Post ? 'Keep reading' : 'See collection'
@@ -47,22 +40,13 @@ const ArticleCard = ({
       <Grid gap={4} height="fit-content">
         <ArticleCardRow>
           <Heading variant="h4">{title}</Heading>
-          <Flex
-            gap="8px"
-            alignItems="center"
-            marginTop="2px"
-            height="fit-content"
-          >
-            <LoveButton />
-            <Body color="opaque">{likesCount}</Body>
-          </Flex>
         </ArticleCardRow>
         <Body>{description}</Body>
         <ArticleCardRow>
           <Body color="opaque" weight="light">
             {date}
           </Body>
-          <GoToButton href={articleSlug} label={linkButtonLabel} />
+          <GoToButton href={slug} label={linkButtonLabel} />
         </ArticleCardRow>
       </Grid>
     </Grid>
