@@ -6,7 +6,7 @@ import LatestContentSection from 'components/organisms/LatestContentSection'
 import GalleryPreviewSection from 'components/organisms/GalleryPreviewSection'
 
 const Space = styled.div`
-  height: 40px;
+  height: 32px;
 `
 
 const Home = () => {
@@ -15,10 +15,9 @@ const Home = () => {
       <Head />
       <Space />
       <Navbar />
-      <Grid p={6} placeItems="center">
+      <Grid p={6} pt={8} placeItems="center">
         <Grid
           as="main"
-          pt={16}
           gap={16}
           placeItems="center"
           maxWidth="container.lg"
