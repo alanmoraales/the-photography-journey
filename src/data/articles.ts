@@ -6,7 +6,7 @@ const articles: IArticle[] = [
     coverUrl: 'https://i.ibb.co/6wDFLKQ/IMG-20201026-172930-3x.webp',
     type: EArticleType.Post,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut commodo malesuada aliquet tortor. Ac non quis porta duis.',
+      'Life, like a day, has a morning and an evening. In this article I want to introduce you The Two Halves Of Life and how this applies to the creative journey.',
     slug: '/posts/starting-the-journey',
     date: 'August 8, 2021',
     photosCount: 1,
