@@ -1,9 +1,9 @@
 import { FC } from 'react'
 import { Box, SlideFade } from '@chakra-ui/react'
-import Head from 'components/atoms/Head'
-import { ArticleHeader } from 'components/molecules/Article'
-import { EArticleType } from 'shared/types/article'
+import Head from '@atoms/Head'
+import { ArticleHeader } from '@molecules/Article'
 import { GetEnumKeys } from 'utils/common'
+import { EArticleType } from '@types/article'
 
 interface IArticleLayout {
   title: string

@@ -1,8 +1,8 @@
 import { FC } from 'react'
 import { Grid } from '@chakra-ui/react'
-import { Heading } from 'components/atoms/Typography'
-import Flex from 'components/atoms/Flex'
-import GoToButton from 'components/atoms/Buttons/GoToButton'
+import Flex from '@atoms/Flex'
+import Heading from '@atoms/typography/Heading'
+import GoToButton from '@atoms/buttons/GoToButton'
 
 interface ISection {
   title: string
