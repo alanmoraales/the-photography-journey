@@ -1,4 +1,4 @@
-import type { IImage } from 'shared/types/image'
+import type { IImage } from '@declarations/image'
 
 const images: IImage[] = [
   {

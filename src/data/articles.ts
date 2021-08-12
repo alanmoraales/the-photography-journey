@@ -1,4 +1,4 @@
-import { IArticle, EArticleType } from 'shared/types/article'
+import { IArticle, EArticleType } from '@declarations/article'
 
 const articles: IArticle[] = [
   {

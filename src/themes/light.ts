@@ -1,5 +1,5 @@
 import { extendTheme } from '@chakra-ui/react'
-import { colors } from 'shared/constants/design'
+import { colors } from '@constants/design'
 import { baseTheme } from './baseTheme'
 
 const {

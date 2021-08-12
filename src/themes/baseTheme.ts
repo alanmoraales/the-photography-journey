@@ -1,5 +1,5 @@
-import { fonts, fontSizes } from 'shared/constants/design'
-import { EHeadingVariants, EBodyVariants } from 'shared/types/design'
+import { fonts, fontSizes } from '@constants/design'
+import { EHeadingVariants, EBodyVariants } from '@declarations/design'
 
 const { nunitoSans, robotoSlab } = fonts
 
