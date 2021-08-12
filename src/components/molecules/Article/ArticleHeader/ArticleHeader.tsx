@@ -1,7 +1,6 @@
 import { Grid } from '@chakra-ui/react'
 import GoBackButton from 'components/atoms/Buttons/GoBackButton'
 import ShareButton from 'components/atoms/Buttons/ShareButton'
-import LoveButton from 'components/atoms/Buttons/LoveButton'
 import Flex from 'components/atoms/Flex'
 import { Heading, Body } from 'components/atoms/Typography'
 import { EArticleType } from 'shared/types/article'
