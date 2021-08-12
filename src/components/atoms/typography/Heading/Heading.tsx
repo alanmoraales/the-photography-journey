@@ -26,4 +26,4 @@ const Heading: FC<IHeading> = ({
   </ChakraHeading>
 )
 
-export { Heading }
+export default Heading

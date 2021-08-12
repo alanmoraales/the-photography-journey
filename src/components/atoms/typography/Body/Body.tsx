@@ -26,4 +26,4 @@ const Body: FC<IBody> = ({
   </Text>
 )
 
-export { Body }
+export default Body
