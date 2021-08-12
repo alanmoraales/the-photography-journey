@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { Grid } from '@chakra-ui/react'
-import Flex from 'components/atoms/Flex'
+import Flex from '@atoms/Flex'
 
 const NavbarContainer: FC = ({ children }) => (
   <Grid placeItems="center" p={6}>
