@@ -2,10 +2,10 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import styled from '@emotion/styled'
 import { Grid } from '@chakra-ui/react'
 import { getPlaiceholder } from 'plaiceholder'
-import Head from 'components/atoms/Head'
 import Navbar from 'components/organisms/Navbar'
 import LatestContentSection from 'components/organisms/LatestContentSection'
 import GalleryPreviewSection from 'components/organisms/GalleryPreviewSection'
+import Head from 'components/atoms/Head'
 import images from 'data/galleryImages'
 
 const Space = styled.div`
