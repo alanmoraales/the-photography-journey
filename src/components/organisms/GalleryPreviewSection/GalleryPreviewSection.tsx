@@ -1,6 +1,6 @@
 import Section from 'components/templates/Section'
 import JustifiedGallery from 'components/organisms/JustifiedGallery'
-import { GetComponentProps } from 'shared/types/common'
+import { GetComponentProps } from 'utils/common'
 
 interface IGalleryPreviewSection
   extends GetComponentProps<typeof JustifiedGallery> {}
