@@ -19,7 +19,7 @@
       "@molecules/*": ["components/molecules/*"],
       "@organisms/*": ["components/organisms/*"],
       "@templates/*": ["components/templates/*"],
-      "@types/*": ["shared/types/*"],
+      "@declarations/*": ["shared/types/*"],
       "@constants/*": ["shared/constants/*"]
     }
   },
