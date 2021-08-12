@@ -1,6 +1,6 @@
-import Logo from '@atoms/icons/Logo'
 import Flex from '@atoms/Flex'
-import { Heading } from '@atoms/typography/Heading'
+import Heading from '@atoms/typography/Heading'
+import Logo from '@atoms/icons/Logo'
 
 const NavbarTitle = () => (
   <Flex gap={4}>

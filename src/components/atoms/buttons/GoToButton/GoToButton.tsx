@@ -1,7 +1,7 @@
 import Link from '@atoms/Link'
 import Flex from '@atoms/Flex'
+import Heading from '@atoms/typography/Heading'
 import GoToArrow from '@atoms/icons/GoToArrow'
-import { Heading } from '@atoms/Typography'
 
 interface IGoToButton {
   href?: string
