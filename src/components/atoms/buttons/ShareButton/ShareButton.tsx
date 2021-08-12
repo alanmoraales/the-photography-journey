@@ -1,5 +1,5 @@
-import IconButton from 'components/atoms/Buttons/IconButton'
-import { ShareIcon } from 'components/atoms/Icons'
+import IconButton from '@atoms/buttons/IconButton'
+import { ShareIcon } from '@atoms/Icons'
 
 const ShareButton = () => (
   <IconButton ariaLabel="Share in social media" icon={ShareIcon} />
