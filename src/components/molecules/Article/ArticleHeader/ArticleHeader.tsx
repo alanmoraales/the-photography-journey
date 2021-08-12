@@ -1,9 +1,10 @@
 import { Grid } from '@chakra-ui/react'
-import GoBackButton from 'components/atoms/Buttons/GoBackButton'
-import ShareButton from 'components/atoms/Buttons/ShareButton'
-import Flex from 'components/atoms/Flex'
-import { Heading, Body } from 'components/atoms/Typography'
-import { EArticleType } from 'shared/types/article'
+import Flex from '@atoms/Flex'
+import ShareButton from '@atoms/buttons/ShareButton'
+import GoBackButton from '@atoms/buttons/GoBackButton'
+import Heading from '@atoms/typography/Heading'
+import Body from '@atoms/typography/Body'
+import { EArticleType } from '@types/article'
 import { GetEnumKeys } from 'utils/common'
 
 interface IArticleHeader {
