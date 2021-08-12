@@ -3,7 +3,7 @@ import { Box, SlideFade } from '@chakra-ui/react'
 import Head from '@atoms/Head'
 import { ArticleHeader } from '@molecules/Article'
 import { GetEnumKeys } from 'utils/common'
-import { EArticleType } from '@types/article'
+import { EArticleType } from '@declarations/article'
 
 interface IArticleLayout {
   title: string

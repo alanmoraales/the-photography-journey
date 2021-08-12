@@ -4,7 +4,7 @@ import ShareButton from '@atoms/buttons/ShareButton'
 import GoBackButton from '@atoms/buttons/GoBackButton'
 import Heading from '@atoms/typography/Heading'
 import Body from '@atoms/typography/Body'
-import { EArticleType } from '@types/article'
+import { EArticleType } from '@declarations/article'
 import { GetEnumKeys } from 'utils/common'
 
 interface IArticleHeader {

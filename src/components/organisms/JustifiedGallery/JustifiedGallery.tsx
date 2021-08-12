@@ -3,7 +3,7 @@ import { Box } from '@chakra-ui/react'
 import useJustifiedLayout from 'use-justified-layout'
 import LazyImage from 'react-lazy-blur-image'
 import ContainerWithSizes, { ISizes } from '@atoms/ContainerWithSizes'
-import type { IImage } from '@types/image'
+import type { IImage } from '@declarations/image'
 
 interface IJustifiedGallery {
   images: IImage[]

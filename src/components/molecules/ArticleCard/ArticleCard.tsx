@@ -1,10 +1,10 @@
 import styled from '@emotion/styled'
 import { Grid } from '@chakra-ui/react'
-import GoToButton from '@atoms/Buttons/GoToButton'
+import GoToButton from '@atoms/buttons/GoToButton'
 import Heading from '@atoms/typography/Heading'
 import Body from '@atoms/typography/Body'
 import { ArticleCardRow } from '@atoms/ArticleCard'
-import { EArticleType, TArticleType } from '@types/article'
+import { EArticleType, TArticleType } from '@declarations/article'
 
 const Image = styled.img`
   object-fit: contain;
