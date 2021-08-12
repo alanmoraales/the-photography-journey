@@ -6,4 +6,4 @@ const HamburgerMenu = (props: IconProps) => (
   </Icon>
 )
 
-export { HamburgerMenu }
+export default HamburgerMenu

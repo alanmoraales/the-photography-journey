@@ -1,5 +1,6 @@
 import { Icon, IconProps } from '@chakra-ui/react'
 
+// TODO use useTheme to change the #f9f9f9 color in circle fill
 const Logo = (props: IconProps) => (
   <Icon color="primary.normal" viewBox="0 0 29 29" {...props}>
     <circle cx="14.5" cy="14.5" r="12.5" fill="#f9f9f9" />
@@ -20,4 +21,4 @@ const Logo = (props: IconProps) => (
   </Icon>
 )
 
-export { Logo }
+export default Logo

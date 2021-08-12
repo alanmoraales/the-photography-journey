@@ -17,4 +17,4 @@ const GoToArrow = (props: IconProps) => (
   </Icon>
 )
 
-export { GoToArrow }
+export default GoToArrow

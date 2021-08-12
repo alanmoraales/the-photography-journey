@@ -17,4 +17,4 @@ const BackArrow = (props: IconProps) => (
   </Icon>
 )
 
-export { BackArrow }
+export default BackArrow

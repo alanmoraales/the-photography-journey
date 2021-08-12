@@ -1,8 +1,8 @@
 import router from 'next/router'
-import Link from 'components/atoms/Link'
-import Flex from 'components/atoms/Flex'
-import { BackArrow } from 'components/atoms/Icons'
-import { Heading } from 'components/atoms/Typography'
+import Link from '@atoms/Link'
+import Flex from '@atoms/Flex'
+import BackArrow from '@atoms/icons/BackArrow'
+import { Heading } from '@atoms/Typography'
 
 interface IGoBackButton {
   href?: string

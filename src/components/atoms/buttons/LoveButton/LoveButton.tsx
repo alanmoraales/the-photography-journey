@@ -1,5 +1,5 @@
-import IconButton from 'components/atoms/Buttons/IconButton'
-import { LoveIcon } from 'components/atoms/Icons'
+import IconButton from '@atoms/buttons/IconButton'
+import LoveIcon from '@atoms/icons/LoveIcon'
 
 const LoveButton = () => (
   <IconButton ariaLabel="Give love to the post" icon={LoveIcon} />

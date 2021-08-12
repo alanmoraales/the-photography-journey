@@ -13,4 +13,4 @@ const LoveIcon = (props: IconProps) => (
   </Icon>
 )
 
-export { LoveIcon }
+export default LoveIcon
