@@ -1,0 +1,76 @@
+import ArticleLayout from '@templates/ArticleLayout'
+import getArticleBySlug from 'utils/common/getArticleBySlug'
+import articles from 'data/articles'
+
+export const article = getArticleBySlug('/posts/starting-the-journey')
+
+#### Introduction
+
+As this is my first article, I wanna start by introducing myself
+and this blog. My name is Alan, I started taking photos four
+years ago because of a school project (maybe I can tell that story later),
+but it quickly became something important in my life.
+In early 2020, I decided to try make some money by taking portraits
+of people, but after a few sessions, I realized that I wasn't getting
+the same satisfaction as if I just take photos of my friends or
+street photography. Then the quarantine came, I took advantage
+and cancel the last sessions I had pending.
+
+Something good about all this Covid crisis is that I had some time
+to think about what I really want to do with my photography.
+I haven't decided everything yet, but one of the things I want
+to do is to communicate more with my photos, and I think this blog
+will help me get there.
+
+Welcome to The Photography Journey, in this first entry I will
+try to share with you some ideas I found in the last year, and
+that inspired me to start this project. Hoppefully, it will help
+you in some way.
+
+![Starting The Journey](https://i.ibb.co/hCPt8fM/IMG-20201026-172930-1920.webp)
+
+#### The two halves of life
+
+The idea of the two halves of life was popularized by Carl Jung,
+a psychologist, also known as founder of the school of analytical
+psychology. It says that a human life, like a day, has its morning
+and its evening, each one with its tasks and goals.
+
+The first half of life is spent building our sense of identity,
+importance, and security, your ego structure. In the second half of
+life, the ego still has a place, but now in the service of the
+True Self or soul, your inner and inherent identity. Your ego is
+the container that holds you all together, so now its strength
+is an advantage.
+
+The transition between the morning and the evening starts when
+you realize that your conscious self is not all of you, but only
+the acceptable you. This often comes with a big failure or a
+significant lost.
+
+#### My own journey
+
+When it comes to my own journey, I have no doubt that I'm just
+starting the morning. I recently took a course about visual narrative,
+and as soon as I can safetly return to the streets, I'm gonna start
+making the kind of photographic series I learnt there. I still have
+a lot to learn and explore, like for example buying a camera
+(I photograph with my smarphone for now), printing and selling my
+work or take photos of the Milky Way.
+
+I don't know if in a few months or years, this blog will still exist,
+but I do know that this is what I wanna try now. I had the fortune to
+met photography early in my life and with time I'll find the lines to
+drive myself into a wonderful evening.
+
+#### Conclusions
+
+Where are you in your creative journey? Either you're in the morning
+or the evening, it doesn't matter. The important thing here is to not
+try to rush it, each one of the two phases have its own porpuse, and
+you're gonna get there. So slow down a moment, enjoy the view, the sounds,
+and be happy, because the day it's just starting.
+
+export default ({ children }) => (
+  <ArticleLayout {...article}>{children}</ArticleLayout>
+)
