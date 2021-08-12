@@ -1,8 +1,8 @@
 import { Fragment } from 'react'
 import { Divider } from '@chakra-ui/react'
 import { When } from 'react-if'
-import Section from 'components/templates/Section'
-import ArticleCard from 'components/molecules/ArticleCard'
+import Section from '@templates/Section'
+import ArticleCard from '@molecules/ArticleCard'
 import articles from 'data/articles'
 
 const LatestContentSection = () => (

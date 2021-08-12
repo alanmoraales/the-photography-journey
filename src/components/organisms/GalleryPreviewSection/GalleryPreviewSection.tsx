@@ -1,5 +1,5 @@
-import Section from 'components/templates/Section'
-import JustifiedGallery from 'components/organisms/JustifiedGallery'
+import Section from '@templates/Section'
+import JustifiedGallery from '@organisms/JustifiedGallery'
 import { GetComponentProps } from 'utils/common'
 
 interface IGalleryPreviewSection

@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { Box } from '@chakra-ui/react'
 import useJustifiedLayout from 'use-justified-layout'
 import LazyImage from 'react-lazy-blur-image'
-import ContainerWithSizes, { ISizes } from 'components/atoms/ContainerWithSizes'
-import type { IImage } from 'shared/types/image'
+import ContainerWithSizes, { ISizes } from '@atoms/ContainerWithSizes'
+import type { IImage } from '@types/image'
 
 interface IJustifiedGallery {
   images: IImage[]

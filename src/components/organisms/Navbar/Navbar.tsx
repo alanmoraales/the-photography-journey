@@ -1,5 +1,5 @@
-import { NavbarContainer, NavbarTitle } from 'components/atoms/Navbar'
-import { HamburgerMenu } from 'components/atoms/Icons'
+import { NavbarContainer, NavbarTitle } from '@atoms/Navbar'
+import HamburgerMenu from '@atoms/icons/HamburgerMenu'
 
 const Navbar = () => (
   <NavbarContainer>
