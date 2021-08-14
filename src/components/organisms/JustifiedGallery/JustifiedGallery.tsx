@@ -1,8 +1,9 @@
-import { useState } from 'react'
+import { useState, Fragment } from 'react'
 import { Box } from '@chakra-ui/react'
 import useJustifiedLayout from 'use-justified-layout'
 import LazyImage from 'react-lazy-blur-image'
 import ContainerWithSizes, { ISizes } from '@atoms/ContainerWithSizes'
+import PictureView from '@atoms/PictureView'
 import type { IImage } from '@declarations/image'
 
 interface IJustifiedGallery {
@@ -30,32 +31,8 @@ const JustifiedGallery = ({ images }: IJustifiedGallery) => {
     <Box width="100%" height={containerHeight}>
       <ContainerWithSizes onSizeChange={onSizesChange}>
         {boxes.map((box, index) => {
-          const { smallWebp, smallJpg, placeholder } = images[index]
-          const { left, width, height, top } = box
-          return (
-            <picture key={`${smallJpg}-${index}`}>
-              <source srcSet={smallWebp} />
-              <LazyImage
-                placeholder={placeholder}
-                uri={smallJpg}
-                render={(src, style) => (
-                  <img
-                    loading="lazy"
-                    alt={smallWebp}
-                    src={src}
-                    width={width}
-                    height={height}
-                    style={{
-                      ...style,
-                      position: 'absolute',
-                      top,
-                      left,
-                    }}
-                  />
-                )}
-              />
-            </picture>
-          )
+          const image = images[index]
+          return <PictureView {...image} {...box} key={image.smallJpg} />
         })}
       </ContainerWithSizes>
     </Box>
