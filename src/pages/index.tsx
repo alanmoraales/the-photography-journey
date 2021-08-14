@@ -32,26 +32,16 @@ const Home = ({
     <>
       <Head />
       <PageTemplate>
-        <Grid p={6} pt={8} placeItems="center">
-          <Grid
-            as="main"
-            gap={16}
-            placeItems="center"
-            maxWidth="container.lg"
-            width="100%"
-          >
-            <Grid
-              w="100%"
-              templateColumns={{ base: 'auto', lg: '65% auto' }}
-              gap={16}
-            >
-              <Grid gap={16}>
-                <LatestContentSection />
-              </Grid>
-            </Grid>
-            <GalleryPreviewSection images={previewGalleryImages} />
+        <Grid
+          w="100%"
+          templateColumns={{ base: 'auto', lg: '65% auto' }}
+          gap={16}
+        >
+          <Grid gap={16}>
+            <LatestContentSection />
           </Grid>
         </Grid>
+        <GalleryPreviewSection images={previewGalleryImages} />
       </PageTemplate>
     </>
   )

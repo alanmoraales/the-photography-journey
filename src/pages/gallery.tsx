@@ -29,17 +29,7 @@ const Home = ({ images }: InferGetStaticPropsType<typeof getStaticProps>) => {
     <>
       <Head />
       <PageTemplate>
-        <Grid p={6} pt={8} placeItems="center">
-          <Grid
-            as="main"
-            gap={16}
-            placeItems="center"
-            maxWidth="container.lg"
-            width="100%"
-          >
-            <JustifiedGallery images={images} />
-          </Grid>
-        </Grid>
+        <JustifiedGallery images={images} />
       </PageTemplate>
     </>
   )
