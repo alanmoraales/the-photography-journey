@@ -10,10 +10,10 @@ import images from 'data/galleryImages'
 export const getStaticProps: GetStaticProps = async () => {
   const previewGalleryImages = await Promise.all(
     images.slice(0, 7).map(async (image) => {
-      const { base64 } = await getPlaiceholder(image.smallJpg)
+      const { css } = await getPlaiceholder(image.smallJpg)
       return {
         ...image,
-        placeholder: base64,
+        css,
       }
     })
   )
