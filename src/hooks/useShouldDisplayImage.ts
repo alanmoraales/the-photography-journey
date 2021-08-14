@@ -3,6 +3,7 @@ import { useState } from 'react'
 const useShouldDisplayImage = () => {
   const [imageIsVisible, setImageIsVisible] = useState(false)
   const [imageIsLoaded, setImageIsLoaded] = useState(false)
+  const shouldDisplayImage = imageIsVisible && imageIsLoaded
 
   const onImageLoaded = () => setImageIsLoaded(true)
 
@@ -10,7 +11,7 @@ const useShouldDisplayImage = () => {
     setImageIsVisible(isVisible)
 
   return {
-    shouldDisplayImage: imageIsVisible && imageIsLoaded,
+    shouldDisplayImage,
     onImageLoaded,
     onImageVisibilityChange,
   }

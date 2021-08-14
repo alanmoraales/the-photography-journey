@@ -18,7 +18,13 @@ const ImagePlaceholder: FC<IImagePlaceholder> = ({
   height = '100%',
   children,
 }) => (
-  <Box position="relative" width={width} height={height} overflow="hidden">
+  <Box
+    display="block"
+    position="relative"
+    width={width}
+    height={height}
+    overflow="hidden"
+  >
     <Box
       filter={`blur(${blur})`}
       height={height}
@@ -28,9 +34,8 @@ const ImagePlaceholder: FC<IImagePlaceholder> = ({
       transform={`scale(${scale})`}
       width={width}
       sx={{ ...cssPlaceholder }}
-    >
-      {children}
-    </Box>
+    />
+    {children}
   </Box>
 )
 

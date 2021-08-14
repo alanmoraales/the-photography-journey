@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Image } from '@chakra-ui/react'
 import VisibilitySensor from 'react-visibility-sensor'
 import ImagePlaceholder from '@atoms/ImagePlaceholder'
 import useShouldDisplayImage from 'hooks/useShouldDisplayImage'
@@ -20,6 +20,7 @@ const PictureView = ({
 }: IPictureView) => {
   const { shouldDisplayImage, onImageLoaded, onImageVisibilityChange } =
     useShouldDisplayImage()
+  const offset = -1000
 
   return (
     <VisibilitySensor
@@ -27,8 +28,8 @@ const PictureView = ({
       partialVisibility
       resizeCheck
       offset={{
-        top: -800,
-        bottom: -800,
+        top: offset,
+        bottom: offset,
       }}
     >
       <Box
@@ -42,20 +43,17 @@ const PictureView = ({
         <ImagePlaceholder cssPlaceholder={css}>
           <picture>
             <source srcSet={smallWebp} />
-            <img
+            <Image
               loading="lazy"
               onLoad={onImageLoaded}
               alt={smallJpg}
               src={smallJpg}
               width={width}
               height={height}
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                opacity: shouldDisplayImage ? 1 : 0,
-                transition: 'opacity 0.2s',
-              }}
+              position="absolute"
+              top={0}
+              left={0}
+              opacity={shouldDisplayImage ? 1 : 0}
             />
           </picture>
         </ImagePlaceholder>
