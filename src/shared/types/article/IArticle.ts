@@ -8,6 +8,8 @@ interface IArticle {
   coverUrl: string
   photosCount: number
   date: string
+  coverWidth: number
+  coverHeight: number
 }
 
 export type { IArticle }
