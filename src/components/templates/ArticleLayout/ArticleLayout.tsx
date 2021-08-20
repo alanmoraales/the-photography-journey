@@ -63,9 +63,26 @@ const ArticleLayout: FC<IArticleLayout> = ({
               paddingTop: 6,
               color: 'neutral.black.normal',
             },
-            img: {
+            '& img': {
               paddingTop: 6,
               paddingBottom: 6,
+            },
+            '& blockquote': {
+              padding: 4,
+              marginTop: 6,
+              marginBottom: 6,
+            },
+            '& blockquote p::before, & blockquote p::after': {
+              content: '"“"',
+            },
+            '& blockquote p::after': {
+              content: '"”"',
+            },
+            '& a': {
+              textDecoration: 'underline',
+            },
+            '& a:hover': {
+              color: 'primary.normal',
             },
           }}
         >
