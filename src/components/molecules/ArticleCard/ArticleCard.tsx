@@ -41,6 +41,7 @@ const ArticleCard = ({
         htmlHeight={coverHeight}
         objectFit="contain"
         objectPosition="center"
+        loading="lazy"
       />
       <Grid gap={4} height="fit-content">
         <ArticleCardRow>
