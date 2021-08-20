@@ -6,8 +6,12 @@ interface IArticle {
   description: string
   type: TArticleType
   coverUrl: string
+  socialMediaCoverUrl: string
   photosCount: number
   date: string
+  coverWidth: number
+  coverHeight: number
+  keywords: string
 }
 
 export type { IArticle }

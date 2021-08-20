@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import {
   Drawer,
   useDisclosure,
@@ -20,7 +21,11 @@ const Navbar = () => {
   return (
     <>
       <NavbarContainer>
-        <NavbarTitle />
+        <Link href={home} passHref>
+          <a>
+            <NavbarTitle />
+          </a>
+        </Link>
         <HamburgerMenuButton onClick={onToggle} />
       </NavbarContainer>
       <Drawer isOpen={isOpen} onClose={onClose} placement="left">

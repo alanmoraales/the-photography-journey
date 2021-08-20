@@ -1,16 +1,9 @@
-import styled from '@emotion/styled'
-import { Grid } from '@chakra-ui/react'
+import { Grid, Image } from '@chakra-ui/react'
 import GoToButton from '@atoms/buttons/GoToButton'
 import Heading from '@atoms/typography/Heading'
 import Body from '@atoms/typography/Body'
 import { ArticleCardRow } from '@atoms/ArticleCard'
 import { EArticleType, TArticleType } from '@declarations/article'
-
-const Image = styled.img`
-  object-fit: contain;
-  width: 100%;
-  object-position: center;
-`
 
 interface IArticleCard {
   coverUrl: string
@@ -20,6 +13,8 @@ interface IArticleCard {
   description: string
   date: string
   slug: string
+  coverWidth: number
+  coverHeight: number
 }
 
 const ArticleCard = ({
@@ -30,13 +25,24 @@ const ArticleCard = ({
   description,
   date,
   slug,
+  coverWidth,
+  coverHeight,
 }: IArticleCard) => {
   const linkButtonLabel =
     type === EArticleType.Post ? 'Keep reading' : 'See collection'
 
   return (
     <Grid gap={4} templateColumns={{ base: 'auto', sm: '35% auto' }}>
-      <Image src={coverUrl} alt={title} />
+      <Image
+        src={coverUrl}
+        alt={title}
+        width="100%"
+        htmlWidth={coverWidth}
+        htmlHeight={coverHeight}
+        objectFit="contain"
+        objectPosition="center"
+        loading="lazy"
+      />
       <Grid gap={4} height="fit-content">
         <ArticleCardRow>
           <Heading variant="h4">{title}</Heading>
