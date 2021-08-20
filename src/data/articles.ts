@@ -12,6 +12,10 @@ const articles: IArticle[] = [
     photosCount: 1,
     coverWidth: 1920,
     coverHeight: 1352,
+    keywords:
+      'The Two Halves Of Life, creative, journey, alanmoraales, philosophy',
+    socialMediaCoverUrl:
+      'https://i.ibb.co/0nHvPr7/Posts-Starting-The-Journey.jpg',
   },
 ]
 

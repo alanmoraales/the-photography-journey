@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import NextHead from 'next/head'
 
-const defaultTitle = 'The Photography Journey'
+const defaultTitle = 'The Photography Journey | alanmoraales'
 
 interface HeadProps {
   title?: string
