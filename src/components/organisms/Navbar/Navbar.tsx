@@ -51,7 +51,11 @@ const Navbar = () => {
         >
           <Grid gap={16} p={8} pt={16}>
             <Flex justifyContent="space-between" alignItems="baseline" gap={8}>
-              <NavbarTitle />
+              <Link href={home} passHref>
+                <a>
+                  <NavbarTitle />
+                </a>
+              </Link>
               <Box transform="translate(0, -7px)">
                 <CloseButton onClick={onClose} />
               </Box>
