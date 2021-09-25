@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import {
   Drawer,
   useDisclosure,
@@ -18,14 +17,18 @@ const { home, posts, gallery } = routes
 const Navbar = () => {
   const { isOpen, onToggle, onClose } = useDisclosure()
 
+  const navbarLinks = (
+    <>
+      <NavbarLink href={home}>Home</NavbarLink>
+      <NavbarLink href={posts}>Posts</NavbarLink>
+      <NavbarLink href={gallery}>Gallery</NavbarLink>
+    </>
+  )
+
   return (
     <>
       <NavbarContainer>
-        <Link href={home} passHref>
-          <a>
-            <NavbarTitle />
-          </a>
-        </Link>
+        <NavbarTitle />
         <Box display={{ base: 'block', lg: 'none' }}>
           <HamburgerMenuButton onClick={onToggle} />
         </Box>
@@ -36,9 +39,7 @@ const Navbar = () => {
           templateColumns="auto auto auto"
           placeItems="center"
         >
-          <NavbarLink href={home}>Home</NavbarLink>
-          <NavbarLink href={posts}>Posts</NavbarLink>
-          <NavbarLink href={gallery}>Gallery</NavbarLink>
+          {navbarLinks}
         </Grid>
       </NavbarContainer>
       <Drawer isOpen={isOpen} onClose={onClose} placement="left">
@@ -51,19 +52,13 @@ const Navbar = () => {
         >
           <Grid gap={16} p={8} pt={16}>
             <Flex justifyContent="space-between" alignItems="baseline" gap={8}>
-              <Link href={home} passHref>
-                <a>
-                  <NavbarTitle />
-                </a>
-              </Link>
+              <NavbarTitle />
               <Box transform="translate(0, -7px)">
                 <CloseButton onClick={onClose} />
               </Box>
             </Flex>
             <Grid gap={4} width="fit-content" pl={10}>
-              <NavbarLink href={home}>Home</NavbarLink>
-              <NavbarLink href={posts}>Posts</NavbarLink>
-              <NavbarLink href={gallery}>Gallery</NavbarLink>
+              {navbarLinks}
             </Grid>
           </Grid>
         </DrawerContent>
