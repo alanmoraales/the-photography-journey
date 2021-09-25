@@ -9,7 +9,7 @@ interface INavbarLink {
 const NavbarLink: FC<INavbarLink> = ({ href = '#', children }) => (
   <Link href={href}>
     <Heading
-      variant="h4"
+      variant="h5"
       textDecoration="none"
       color="inherit"
       sx={{
