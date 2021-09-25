@@ -4,7 +4,7 @@ import Logo from '@atoms/icons/Logo'
 
 const NavbarTitle = () => (
   <Flex gap={4}>
-    <Logo boxSize={25} marginTop={0.5} />
+    <Logo boxSize={25} />
     <Heading variant="h5">The Photography Journey</Heading>
   </Flex>
 )

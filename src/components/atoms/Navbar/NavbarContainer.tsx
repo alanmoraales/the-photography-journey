@@ -16,7 +16,6 @@ const NavbarContainer: FC = ({ children }) => (
       gap={16}
       maxWidth="container.lg"
       width="100%"
-      alignItems="baseline"
     >
       {children}
     </Flex>

@@ -26,7 +26,20 @@ const Navbar = () => {
             <NavbarTitle />
           </a>
         </Link>
-        <HamburgerMenuButton onClick={onToggle} />
+        <Box display={{ base: 'block', lg: 'none' }}>
+          <HamburgerMenuButton onClick={onToggle} />
+        </Box>
+        <Grid
+          display={{ base: 'none', lg: 'grid' }}
+          gap={8}
+          width="fit-content"
+          templateColumns="auto auto auto"
+          placeItems="center"
+        >
+          <NavbarLink href={home}>Home</NavbarLink>
+          <NavbarLink href={posts}>Posts</NavbarLink>
+          <NavbarLink href={gallery}>Gallery</NavbarLink>
+        </Grid>
       </NavbarContainer>
       <Drawer isOpen={isOpen} onClose={onClose} placement="left">
         <DrawerOverlay background="rgba(29, 29, 29, 0.1)" />
