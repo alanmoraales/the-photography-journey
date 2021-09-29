@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import {
   Drawer,
   useDisclosure,
@@ -18,15 +17,30 @@ const { home, posts, gallery } = routes
 const Navbar = () => {
   const { isOpen, onToggle, onClose } = useDisclosure()
 
+  const navbarLinks = (
+    <>
+      <NavbarLink href={home}>Home</NavbarLink>
+      <NavbarLink href={posts}>Posts</NavbarLink>
+      <NavbarLink href={gallery}>Gallery</NavbarLink>
+    </>
+  )
+
   return (
     <>
       <NavbarContainer>
-        <Link href={home} passHref>
-          <a>
-            <NavbarTitle />
-          </a>
-        </Link>
-        <HamburgerMenuButton onClick={onToggle} />
+        <NavbarTitle />
+        <Box display={{ base: 'block', lg: 'none' }}>
+          <HamburgerMenuButton onClick={onToggle} />
+        </Box>
+        <Grid
+          display={{ base: 'none', lg: 'grid' }}
+          gap={8}
+          width="fit-content"
+          templateColumns="auto auto auto"
+          placeItems="center"
+        >
+          {navbarLinks}
+        </Grid>
       </NavbarContainer>
       <Drawer isOpen={isOpen} onClose={onClose} placement="left">
         <DrawerOverlay background="rgba(29, 29, 29, 0.1)" />
@@ -44,9 +58,7 @@ const Navbar = () => {
               </Box>
             </Flex>
             <Grid gap={4} width="fit-content" pl={10}>
-              <NavbarLink href={home}>Home</NavbarLink>
-              <NavbarLink href={posts}>Posts</NavbarLink>
-              <NavbarLink href={gallery}>Gallery</NavbarLink>
+              {navbarLinks}
             </Grid>
           </Grid>
         </DrawerContent>

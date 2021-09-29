@@ -10,6 +10,7 @@ type THeadingFontSizes = {
 const headingFontSizes: THeadingFontSizes = {
   [EHeadingVariants.h1]: `clamp(${fontSizes['7xl']}, 3vw, ${fontSizes['8xl']})`,
   [EHeadingVariants.h4]: `clamp(${fontSizes.xl}, 2vw, ${fontSizes['3xl']})`,
+  [EHeadingVariants.h5]: `clamp(${fontSizes.lg}, 2vw, ${fontSizes['2xl']})`,
   [EHeadingVariants.h6]: `clamp(${fontSizes.md}, 1vw, ${fontSizes.lg})`,
 }
 
