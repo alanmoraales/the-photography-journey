@@ -67,6 +67,13 @@ const ArticleLayout: FC<IArticleLayout> = ({
               paddingTop: 6,
               color: 'neutral.black.normal',
             },
+            '& h5': {
+              fontFamily: 'heading',
+              fontSize: 'h5',
+              paddingBottom: 4,
+              paddingTop: 6,
+              color: 'neutral.black.normal',
+            },
             '& img': {
               paddingTop: 6,
               paddingBottom: 6,
