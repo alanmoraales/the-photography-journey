@@ -2,6 +2,21 @@ import { IArticle, EArticleType } from '@declarations/article'
 
 const articles: IArticle[] = [
   {
+    title: 'Infinity',
+    coverUrl: 'https://i.ibb.co/56GLc9n/IMG-20200704-195213-1.jpg',
+    type: EArticleType.Post,
+    description:
+      'People is divides in two pieces, the infinite and the finite. In this article I introduce the philosophy of balancing the infinite and how it can help you have a better life.',
+    slug: '/posts/infinity',
+    date: 'October 16, 2021',
+    photosCount: 1,
+    coverWidth: 1222,
+    coverHeight: 687,
+    keywords:
+      'balance, infinite, finite, alanmoraales, philosophy, balance the infinite',
+    socialMediaCoverUrl: 'https://i.ibb.co/25Bz9c5/infinity-banner.jpg',
+  },
+  {
     title: 'Starting The Journey',
     coverUrl: 'https://i.ibb.co/mTX0w0T/IMG-20201026-172930-1920.jpg',
     type: EArticleType.Post,
