@@ -28,7 +28,7 @@ const baseTheme = {
     global: {
       'html, body': {
         bg: 'background',
-        fontSize: '16px',
+        fontSize: fontSizes.base,
       },
     },
   },
