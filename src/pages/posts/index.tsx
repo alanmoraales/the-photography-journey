@@ -5,32 +5,14 @@ import PageTemplate from '@templates/PageTemplate'
 import ArticleCard from '@molecules/ArticleCard'
 import Head from '@atoms/Head'
 import articles from 'data/articles'
+import seoMetadata from 'data/seoMetadata'
 
 const Posts = () => (
   <>
-    <Head title="Posts | The Photography Journey">
-      <meta
-        name="description"
-        content="The complete list of posts in The Photography Journey"
-      />
-      <meta
-        name="keywords"
-        content="photography, blog, alanmoraales, creative, posts"
-      />
-      <meta property="og:title" content="Posts | The Photography Journey" />
-      <meta
-        property="og:description"
-        content="The complete list of posts in The Photography Journey"
-      />
-      <meta property="og:image" content="https://i.ibb.co/L84XVcs/Posts.jpg" />
-      <meta
-        property="og:url"
-        content="https://journey.alanmoraales.live/posts"
-      />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta property="og:site_name" content="The Photography Journey" />
-      <meta name="twitter:image:alt" content="The Photography Journey" />
-    </Head>
+    <Head
+      title="Posts | The Photography Journey"
+      seoMetadata={seoMetadata.posts}
+    />
     <PageTemplate>
       <Grid
         w="100%"
