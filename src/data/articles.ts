@@ -6,7 +6,7 @@ const articles: IArticle[] = [
     coverUrl: 'https://i.ibb.co/56GLc9n/IMG-20200704-195213-1.jpg',
     type: EArticleType.Post,
     description:
-      'People is divides in two pieces, the infinite and the finite. In this article I introduce the philosophy of balancing the infinite and how it can help you have a better life.',
+      'People is divided in two pieces, the infinite and the finite. In this article I introduce the philosophy of balancing the infinite and how it can help you have a better life.',
     slug: '/posts/infinity',
     date: 'October 16, 2021',
     photosCount: 1,

@@ -1,4 +1,5 @@
 const fontSizes = {
+  base: '16px',
   sm: '0.8rem', // 12.8px
   md: '1rem', // 16px
   lg: '1.125rem', // 18px
