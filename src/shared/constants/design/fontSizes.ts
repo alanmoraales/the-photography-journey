@@ -6,8 +6,8 @@ const fontSizes = {
   xl: '1.25rem', // 20px
   '2xl': '1.313rem', // 21px
   '3xl': '1.438rem', // 23px
-  '4xl': '1.563rem', // 25
-  '5xl': '1.953rem', // 31.248px
+  '4xl': '1.563rem', // 25px
+  '5xl': '1.953rem', // 31.25px
   '6xl': '2.25rem', // 36px
   '7xl': '2.441rem', // 39.056px
   '8xl': '3.052rem', // 48.832px
