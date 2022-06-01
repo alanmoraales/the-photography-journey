@@ -2,24 +2,6 @@ import type { IImage } from '@declarations/image'
 
 const images: IImage[] = [
   {
-    smallWebp: 'https://i.ibb.co/L9cWkfZ/IMG-20220305-084739.webp',
-    smallJpg: 'https://i.ibb.co/q1v3sjs/IMG-20220305-084739.jpg',
-    width: 1920,
-    height: 1340,
-  },
-  {
-    smallWebp: 'https://i.ibb.co/0f3Zk1t/IMG-20220305-084722.webp',
-    smallJpg: 'https://i.ibb.co/4RDyJR6/IMG-20220305-084722.jpg',
-    width: 1920,
-    height: 1494,
-  },
-  {
-    smallWebp: 'https://i.ibb.co/2NfNdR8/IMG-20220305-084426-1.webp',
-    smallJpg: 'https://i.ibb.co/vVS9vq5/IMG-20220305-084426-1.jpg',
-    width: 1920,
-    height: 1079,
-  },
-  {
     smallWebp: 'https://i.ibb.co/FVMj7NJ/IMG-20220305-084144-1.webp',
     smallJpg: 'https://i.ibb.co/RC7S00m/IMG-20220305-084144-1.jpg',
     width: 1920,
