@@ -1,9 +1,10 @@
-import { FC } from 'react'
+import { FC, useEffect } from 'react'
 import { Box, SlideFade } from '@chakra-ui/react'
 import Head from '@atoms/Head'
 import { getArticleUrl } from 'utils/common'
 import { PrintHeader } from '@molecules/Print'
 import PageTemplate from '@templates/PageTemplate/PageTemplate'
+import mixpanelService from 'mixpanel'
 
 interface IPrintLayout {
   title: string
@@ -26,6 +27,11 @@ const PrintLayout: FC<IPrintLayout> = ({
 }) => {
   const pageTitle = `${title} | The Photography Journey`
   const articleUrl = getArticleUrl(slug)
+
+  useEffect(() => {
+    mixpanelService.trackUserViewedPrint({ printTitle: title })
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <>

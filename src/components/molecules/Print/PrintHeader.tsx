@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import { Button, Grid, Tooltip } from '@chakra-ui/react'
 import useClipboard from 'react-use-clipboard'
 import Flex from '@atoms/Flex'
@@ -7,6 +5,7 @@ import ShareButton from '@atoms/buttons/ShareButton'
 import Heading from '@atoms/typography/Heading'
 import Body from '@atoms/typography/Body'
 import WhatsappIcon from '@atoms/icons/WhatsappIcon'
+import mixpanelService from 'mixpanel'
 
 interface IPrintHeader {
   title: string
@@ -20,6 +19,15 @@ const PrintHeader = ({ title, size, url, price }: IPrintHeader) => {
     successDuration: 3000,
   })
 
+  const onClickShare = () => {
+    mixpanelService.trackUserClickedSharePrint({ printTitle: title })
+    setCopied()
+  }
+
+  const onTrackClickOrder = () => {
+    mixpanelService.trackUserClickedOrderPrint({ printTitle: title })
+  }
+
   return (
     <Grid bg="glass" height="fit-content">
       <Grid maxWidth="70ch" gap={8} width="100%">
@@ -28,7 +36,7 @@ const PrintHeader = ({ title, size, url, price }: IPrintHeader) => {
             <Heading>{title}</Heading>
             <Tooltip label="Link copied!" isOpen={isCopied}>
               <span>
-                <ShareButton onClick={setCopied} />
+                <ShareButton onClick={onClickShare} />
               </span>
             </Tooltip>
           </Flex>
@@ -50,6 +58,7 @@ const PrintHeader = ({ title, size, url, price }: IPrintHeader) => {
           href={`https://wa.me/9995627586?text=Hola%20me%20gustaría%20ordenar%20la%20foto%20${title}`}
           target="_blank"
           size="lg"
+          onClick={onTrackClickOrder}
         >
           Ordenar por {price}
         </Button>
