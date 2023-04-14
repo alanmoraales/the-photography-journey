@@ -55,7 +55,7 @@ const PrintHeader = ({ title, size, url, price }: IPrintHeader) => {
           colorScheme="whatsapp"
           leftIcon={<WhatsappIcon />}
           as="a"
-          href={`https://wa.me/9995627586?text=Hola%20me%20gustaría%20ordenar%20la%20foto%20${title}`}
+          href={`https://wa.me/+529995627586?text=Hola%20me%20gustaría%20ordenar%20la%20foto%20${title}`}
           target="_blank"
           size="lg"
           onClick={onTrackClickOrder}
