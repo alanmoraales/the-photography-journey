@@ -9,10 +9,13 @@ import seoMetadata from 'data/seoMetadata'
 export const getStaticProps: GetStaticProps = async () => {
   const imagesWithPlaceholder = await Promise.all(
     images.map(async (image) => {
-      const { css } = await getPlaiceholder(image.smallJpg)
+      const { css, img, base64 } = await getPlaiceholder(image.src)
       return {
         ...image,
+        width: img.width,
+        height: img.height,
         css,
+        base64Placeholder: base64,
       }
     })
   )

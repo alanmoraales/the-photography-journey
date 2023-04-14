@@ -1,12 +1,10 @@
 import { ICssImagePlaceholder } from './ICssImagePlaceholder'
 
 interface IImage {
-  smallWebp: string
-  smallJpg: string
-  originalWebp?: string
-  originalJpg?: string
+  src: string
   width: number
   height: number
+  base64Placeholder?: string
   css?: ICssImagePlaceholder
 }
 
