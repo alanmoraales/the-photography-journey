@@ -4,11 +4,17 @@ import Heading from '@atoms/typography/Heading'
 import Body from '@atoms/typography/Body'
 import { ArticleCardRow } from '@atoms/ArticleCard'
 import { EArticleType, TArticleType } from '@declarations/article'
+import { Else, If, Then } from 'react-if'
+
+const buttonsLabels = {
+  [EArticleType.Post]: 'Keep reading',
+  [EArticleType.Collection]: 'See collection',
+  [EArticleType.Print]: 'See more',
+}
 
 interface IArticleCard {
   coverUrl: string
   type?: TArticleType
-  photosCount: number
   title: string
   description: string
   date: string
@@ -20,7 +26,6 @@ interface IArticleCard {
 const ArticleCard = ({
   coverUrl,
   type = EArticleType.Post,
-  photosCount,
   title,
   description,
   date,
@@ -28,8 +33,7 @@ const ArticleCard = ({
   coverWidth,
   coverHeight,
 }: IArticleCard) => {
-  const linkButtonLabel =
-    type === EArticleType.Post ? 'Keep reading' : 'See collection'
+  const linkButtonLabel = buttonsLabels[type]
 
   return (
     <Grid gap={4} templateColumns={{ base: 'auto', sm: '35% auto' }}>
@@ -49,9 +53,18 @@ const ArticleCard = ({
         </ArticleCardRow>
         <Body>{description}</Body>
         <ArticleCardRow>
-          <Body color="opaque" weight="light">
-            {date}
-          </Body>
+          <If condition={type === EArticleType.Print}>
+            <Then>
+              <Heading variant="h5" color="primary.normal">
+                {date}
+              </Heading>
+            </Then>
+            <Else>
+              <Body color="opaque" weight="light">
+                {date}
+              </Body>
+            </Else>
+          </If>
           <GoToButton href={slug} label={linkButtonLabel} />
         </ArticleCardRow>
       </Grid>

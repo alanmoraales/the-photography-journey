@@ -20,7 +20,7 @@ const Navbar = () => {
   const navbarLinks = (
     <>
       <NavbarLink href={home}>Home</NavbarLink>
-      <NavbarLink href={posts}>Posts</NavbarLink>
+      <NavbarLink href={posts}>Blog</NavbarLink>
       <NavbarLink href={gallery}>Gallery</NavbarLink>
     </>
   )
@@ -36,7 +36,7 @@ const Navbar = () => {
           display={{ base: 'none', lg: 'grid' }}
           gap={8}
           width="fit-content"
-          templateColumns="auto auto auto"
+          templateColumns="auto auto auto auto"
           placeItems="center"
         >
           {navbarLinks}

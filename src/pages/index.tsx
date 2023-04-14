@@ -7,6 +7,7 @@ import GalleryPreviewSection from '@organisms/GalleryPreviewSection'
 import Head from '@atoms/Head'
 import images from 'data/galleryImages'
 import seoMetadata from 'data/seoMetadata'
+import LatestPrintsSection from '@organisms/LatestPrintsSection/LatestsPrintsSection'
 
 export const getStaticProps: GetStaticProps = async () => {
   const previewGalleryImages = await Promise.all(
@@ -42,6 +43,7 @@ const Home = ({
           gap={16}
         >
           <Grid gap={16}>
+            <LatestPrintsSection />
             <LatestContentSection />
           </Grid>
         </Grid>
