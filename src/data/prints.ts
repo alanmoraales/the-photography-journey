@@ -9,10 +9,10 @@ const prints: IPrint[] = [
     slug: '/prints/infinity',
     size: '8x6 pulgadas',
     price: '$220 MXN',
-    coverWidth: 1222,
-    coverHeight: 687,
+    coverWidth: 2048,
+    coverHeight: 1532,
     keywords:
-      'balance, infinite, finite, alanmoraales, philosophy, balance the infinite',
+      'balance, infinite, finite, alanmoraales, philosophy, balance the infinite, photography, infinity, foto impresa, printed photo',
     socialMediaCoverUrl: '/prints/infinity.jpg',
   },
   {
@@ -23,10 +23,10 @@ const prints: IPrint[] = [
     slug: '/prints/sanar-fluir',
     size: '8x6 pulgadas',
     price: '$220 MXN',
-    coverWidth: 1222,
-    coverHeight: 687,
+    coverWidth: 2048,
+    coverHeight: 1538,
     keywords:
-      'balance, infinite, finite, alanmoraales, philosophy, balance the infinite',
+      'anxiety, calm, depresion, alanmoraales, philosophy, photography, sanar, fluir, foto impresa, printed photo',
     socialMediaCoverUrl: '/prints/sanar-fluir.jpg',
   },
 ]
