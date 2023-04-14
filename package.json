@@ -23,7 +23,6 @@
     "react-sizeme": "^3.0.1",
     "react-use-clipboard": "^1.0.7",
     "react-visibility-sensor": "^5.1.1",
-    "sharp": "^0.28.3",
     "use-justified-layout": "0.0.5"
   },
   "devDependencies": {

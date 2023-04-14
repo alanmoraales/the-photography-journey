@@ -31,7 +31,7 @@ const JustifiedGallery = ({ images }: IJustifiedGallery) => {
       <ContainerWithSizes onSizeChange={onSizesChange}>
         {boxes.map((box, index) => {
           const image = images[index]
-          return <PictureView {...image} {...box} key={image.smallJpg} />
+          return <PictureView {...image} {...box} key={image.src} />
         })}
       </ContainerWithSizes>
     </Box>
