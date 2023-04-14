@@ -12,7 +12,7 @@ import HamburgerMenuButton from '@atoms/buttons/HamburgerMenuButton'
 import CloseButton from '@atoms/buttons/CloseButton'
 import routes from '@constants/routes'
 
-const { home, posts, gallery } = routes
+const { home, posts, gallery, prints } = routes
 
 const Navbar = () => {
   const { isOpen, onToggle, onClose } = useDisclosure()
@@ -20,6 +20,7 @@ const Navbar = () => {
   const navbarLinks = (
     <>
       <NavbarLink href={home}>Home</NavbarLink>
+      <NavbarLink href={prints}>Prints</NavbarLink>
       <NavbarLink href={posts}>Blog</NavbarLink>
       <NavbarLink href={gallery}>Gallery</NavbarLink>
     </>

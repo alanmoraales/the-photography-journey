@@ -8,7 +8,7 @@ import prints from 'data/prints'
 import { EArticleType } from '@declarations/article'
 
 const LatestPrintsSection = () => (
-  <Section title="My printed photos">
+  <Section title="My printed photos" seeAllUrl={routes.prints}>
     {prints.slice(0, 6).map((article, index) => (
       <Fragment key={article.slug}>
         <ArticleCard
