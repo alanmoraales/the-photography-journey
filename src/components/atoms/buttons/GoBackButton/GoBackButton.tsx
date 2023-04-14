@@ -5,7 +5,6 @@ import Heading from '@atoms/typography/Heading'
 import BackArrow from '@atoms/icons/BackArrow'
 
 interface IGoBackButton {
-  href?: string
   label?: string
 }
 
@@ -13,7 +12,7 @@ const onGoBack = () => {
   router.back()
 }
 
-const GoBackButton = ({ href = '#', label = 'Go back' }: IGoBackButton) => (
+const GoBackButton = ({ label = 'Go back' }: IGoBackButton) => (
   <Link onClick={onGoBack}>
     <Flex
       gap={2}
