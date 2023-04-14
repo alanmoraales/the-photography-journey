@@ -13,7 +13,7 @@ const prints: IPrint[] = [
     coverHeight: 687,
     keywords:
       'balance, infinite, finite, alanmoraales, philosophy, balance the infinite',
-    socialMediaCoverUrl: '/prints/infinity',
+    socialMediaCoverUrl: '/prints/infinity.jpg',
   },
   {
     title: 'Sanar, Fluir',
