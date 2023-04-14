@@ -1,0 +1,27 @@
+import PrintLayout from '@templates/PrintLayout'
+import getPrintBySlug from 'utils/common/getPrintBySlug'
+
+export const print = getPrintBySlug('/prints/infinity')
+
+![Infinity I](/prints/infinity.jpg)
+
+**Infinity** es una serie de 3 fotos que cuentan el viaje en busca del verdadero yo a través de explorar el _infinito_.
+
+Esta es la segunda de la serie, impresa en un **tamaño de 6x8 pulgadas** ideal para tener en tu escritorio o mesa de noche.
+
+#### Puedes leer más sobre esta serie a continuación:
+
+_I work as a full-time software engineer, I wake up at 7 am and rush through my morning routine (shower, breakfast, pack my computer) in order to arrive work at 9 am. Then I sit, and spend all my day in front of a computer, writing code I'm not happy with because I have a deadline. At 7 pm, I commute back to my apartment, 2 hours of traffic, dinner, sleep, and finally another day._
+
+_While I work, in order to avoid my reality, I Imagine myself being an intergalactic secret agent, fighting crime around space, dancing to celebrate another great day. For a moment, I feel happy._
+
+That's the story I told in one exercise I perform in my drama class a few years ago.
+I was starting my software engineer degree, and for some reason, I imagined my life being like that.
+
+...
+
+[Leer el post completo](/posts/infinity)
+
+export default ({ children }) => (
+  <PrintLayout {...print}>{children}</PrintLayout>
+)

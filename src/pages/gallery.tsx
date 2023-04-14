@@ -5,6 +5,8 @@ import JustifiedGallery from '@organisms/JustifiedGallery'
 import Head from '@atoms/Head'
 import images from 'data/galleryImages'
 import seoMetadata from 'data/seoMetadata'
+import { useEffect } from 'react'
+import mixpanelService from 'mixpanel'
 
 export const getStaticProps: GetStaticProps = async () => {
   const imagesWithPlaceholder = await Promise.all(
@@ -28,6 +30,10 @@ export const getStaticProps: GetStaticProps = async () => {
 }
 
 const Home = ({ images }: InferGetStaticPropsType<typeof getStaticProps>) => {
+  useEffect(() => {
+    mixpanelService.trackUserEnteredGallery()
+  }, [])
+
   return (
     <>
       <Head

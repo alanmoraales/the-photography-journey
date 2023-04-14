@@ -7,6 +7,9 @@ import GalleryPreviewSection from '@organisms/GalleryPreviewSection'
 import Head from '@atoms/Head'
 import images from 'data/galleryImages'
 import seoMetadata from 'data/seoMetadata'
+import LatestPrintsSection from '@organisms/LatestPrintsSection/LatestsPrintsSection'
+import { useEffect } from 'react'
+import mixpanelService from 'mixpanel'
 
 export const getStaticProps: GetStaticProps = async () => {
   const previewGalleryImages = await Promise.all(
@@ -32,6 +35,10 @@ export const getStaticProps: GetStaticProps = async () => {
 const Home = ({
   previewGalleryImages,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
+  useEffect(() => {
+    mixpanelService.trackUserEnteredHome()
+  }, [])
+
   return (
     <>
       <Head seoMetadata={seoMetadata.home} />
@@ -42,6 +49,7 @@ const Home = ({
           gap={16}
         >
           <Grid gap={16}>
+            <LatestPrintsSection />
             <LatestContentSection />
           </Grid>
         </Grid>

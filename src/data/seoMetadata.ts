@@ -31,6 +31,14 @@ const seoMetadata: TSeoMetadata = {
     ogTitle: 'Posts | The Photography Journey',
     ogUrl: `${hostUrl}/posts`,
   },
+  prints: {
+    description: 'The complete list of printed photos available for purchase',
+    keywords:
+      'photography, blog, alanmoraales, creative, prints, prints for sale, fotos impresas',
+    ogImageSrc: '/prints/sanar-fluir.jpg',
+    ogTitle: 'Prints | The Photography Journey',
+    ogUrl: `${hostUrl}/prints`,
+  },
 }
 
 export default seoMetadata

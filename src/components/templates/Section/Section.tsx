@@ -3,6 +3,7 @@ import { Grid } from '@chakra-ui/react'
 import Flex from '@atoms/Flex'
 import Heading from '@atoms/typography/Heading'
 import GoToButton from '@atoms/buttons/GoToButton'
+import { When } from 'react-if'
 
 interface ISection {
   title: string
@@ -20,7 +21,9 @@ const Section: FC<ISection> = ({
     <Heading variant="h6">{title}</Heading>
     {children}
     <Flex direction="row-reverse">
-      <GoToButton href={seeAllUrl} label={seeAllLabel} />
+      <When condition={Boolean(seeAllUrl)}>
+        <GoToButton href={seeAllUrl} label={seeAllLabel} />
+      </When>
     </Flex>
   </Grid>
 )
