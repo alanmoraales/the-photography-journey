@@ -35,7 +35,7 @@ const seoMetadata: TSeoMetadata = {
     description: 'The complete list of printed photos available for purchase',
     keywords:
       'photography, blog, alanmoraales, creative, prints, prints for sale, fotos impresas',
-    ogImageSrc: 'https://alanmoraales.co/og/prints.jpg',
+    ogImageSrc: 'https://www.alanmoraales.co/og/prints.jpg',
     ogTitle: 'Prints | The Photography Journey',
     ogUrl: `${hostUrl}/prints`,
   },

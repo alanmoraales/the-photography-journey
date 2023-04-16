@@ -13,7 +13,7 @@ const prints: IPrint[] = [
     coverHeight: 1532,
     keywords:
       'balance, infinite, finite, alanmoraales, philosophy, balance the infinite, photography, infinity, foto impresa, printed photo',
-    socialMediaCoverUrl: 'https://alanmoraales.co/prints/infinity.jpg',
+    socialMediaCoverUrl: 'https://www.alanmoraales.co/prints/infinity.jpg',
   },
   {
     title: 'Sanar, Fluir',
@@ -27,7 +27,7 @@ const prints: IPrint[] = [
     coverHeight: 1538,
     keywords:
       'anxiety, calm, depresion, alanmoraales, philosophy, photography, sanar, fluir, foto impresa, printed photo',
-    socialMediaCoverUrl: 'https://alanmoraales.co/prints/sanar-fluir.jpg',
+    socialMediaCoverUrl: 'https://www.alanmoraales.co/prints/sanar-fluir.jpg',
   },
 ]
 
