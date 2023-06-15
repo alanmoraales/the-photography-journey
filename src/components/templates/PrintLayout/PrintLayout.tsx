@@ -119,6 +119,15 @@ const PrintLayout: FC<IPrintLayout> = ({
                     '& a:hover': {
                       color: 'primary.normal',
                     },
+                    '& ul': {
+                      paddingLeft: 8,
+                      paddingBottom: 4,
+                    },
+                    '& li': {
+                      fontSize: 'blogParagraph',
+                      paddingBottom: 1,
+                      color: 'neutral.black.normal',
+                    },
                   }}
                 >
                   {children}
