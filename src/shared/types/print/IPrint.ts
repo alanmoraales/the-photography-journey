@@ -9,6 +9,7 @@ interface IPrint {
   coverHeight: number
   keywords: string
   price: string
+  carouselImages: { src: string; alt: string }[]
 }
 
 export type { IPrint }
