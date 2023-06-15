@@ -55,8 +55,8 @@ const ArticleCard = ({
         <ArticleCardRow>
           <If condition={type === EArticleType.Print}>
             <Then>
-              <Heading variant="h5" color="primary.normal">
-                {date}
+              <Heading variant="h6" color="primary.normal">
+                desde {date}
               </Heading>
             </Then>
             <Else>

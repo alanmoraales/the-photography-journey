@@ -60,7 +60,7 @@ const PrintHeader = ({ title, size, url, price }: IPrintHeader) => {
           size="lg"
           onClick={onTrackClickOrder}
         >
-          Ordenar por {price}
+          Ordenar desde {price}
         </Button>
       </Grid>
     </Grid>
